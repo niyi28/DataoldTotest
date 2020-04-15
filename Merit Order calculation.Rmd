@@ -1,0 +1,41 @@
+---
+title: "Selection of Power plants using the Merit Order"
+author: "Niyi"
+date: "3/23/2020"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Computation of the marginal cost per hour with the Merit order
+
+After my second semester, I thought I had understood at least the most important aspects of energy engineering and their systems. I was not totally wrong because I knew major technical advantages and disadvantages of both large conventional/renewable energy conversion systems and small energy systems like mini-grids and swarm grids (looking forward to writing a comparison on the two). When I started the third semester, I began to grasp something I never thought of, I used to think that the all the power plants were put online to serve the energy demand specific to the country for instance Germany. I did not even know anything about load curve or the variation of a nation’s demand during the year. 
+Using Germany as an example, I will try explaining the simplified task of the four transmission system operators (TSOs) with regards to power plants sequencing to meet the energy demand (in this example, per hour) and how they calculate the marginal cost of electricity in these hours. Before we go any further, we need to understand, who are TSOs? What is their basic approach in a generation -load balancing? what is the residual load? and, what is merit order?
+
+Transmission System Operators (TSOs): They are entrusted with the task of transporting electricity and in some cases, natural gas from using fixed infrastructure as defined by the European commission. To explain a bit further, the electricity system of the country is basically divided into generation (energy suppliers), transmission (transport electricity from suppliers over high voltage lines) and distribution (step down high voltage electricity and supply to end-users). In Germany there are four TSOs, namely, 50 Hertz, Amprion, TenneT, TransnetBW.
+
+In relation to generation-demand balancing, the TSOs in Germany with the predicted load demand for the next 24 hours (predictions are often corrected within minutes to time precited) and with the weather forecast, the predicted non-dispatchable renewable energy for the same period. The sum of non-dispatchable renewable energy and dispatchable renewable energy is subtracted from the predicted energy demand and the remaining demand, the residual load is covered by the conventional power plants. This way priority is given to renewable energy suppliers.
+Residual load = Demand load - (Non -dispatchable RES + Dispatchable RES)
+Merit order
+The merit order ranks available sources (conventional power plants) of electrical generation based on their marginal cost and the cumulative amount of energy generated. This way, the TSO ensures that the plants with the lowest marginal cost are first brought online with the goal minimizing the cost of electricity production. The graph below illustrates how the marginal cost from the lowest of power plants against the power cumulative.
+
+```{r cars}
+summary(cars)
+
+##### Control, Alt, I
+```
+
+
+
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

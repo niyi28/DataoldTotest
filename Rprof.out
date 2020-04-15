@@ -1,0 +1,8 @@
+sample.interval=20000
+"Rprof" 
+"Rprof" 
+"Rprof" 
+"c" "hook" "Rprof" 
+"hook" "Rprof" 
+"hook" "Rprof" 
+sample.interval=20000
